@@ -46,6 +46,9 @@
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=9.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Extensions.Logging.Abstractions.9.0.5\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Extensions.Logging.Debug, Version=9.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Extensions.Logging.Debug.9.0.5\lib\net462\Microsoft.Extensions.Logging.Debug.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Extensions.Options, Version=9.0.0.5, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Extensions.Options.9.0.5\lib\net462\Microsoft.Extensions.Options.dll</HintPath>
     </Reference>
@@ -94,6 +97,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DI\ServiceCollectionBuilder.cs" />
     <Compile Include="Models\DimensionDef.cs" />
     <Compile Include="Models\ExtrusionDef.cs" />
     <Compile Include="Models\FamilyDefinition.cs" />
@@ -111,7 +115,6 @@
   <ItemGroup>
     <Folder Include="Builders\" />
     <Folder Include="Commands\" />
-    <Folder Include="DI\" />
     <Folder Include="Utils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
